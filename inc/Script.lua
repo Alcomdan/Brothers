@@ -956,7 +956,7 @@ ali = {
 ssssys = ali[math.random(#ali)]
 sendPhoto(msg.chat_id_,msg.id_,data.photos_[0].sizes_[1].photo_.persistent_id_,
 '📷╣'..ssssys..'\n'
-..'🎟╣ايديـك ➣ '..msg.sender_user_id_..' \n'
+..'🎟╣ايديـك ➣ '..msg.sender_user_id_..'\n'
 ..UserNameID
 ..'🤹‍♂️╣رتبتـك ➣ '..msg.TheRank..'\n'
 ..'🎭╣تفاعلك ➣ '..Get_Ttl(msgs)..'\n'
@@ -969,7 +969,7 @@ end
 end
 if redis:get("getidstatus"..msg.chat_id_) == "Simple" then
 sendMsg(msg.chat_id_,msg.id_,
-'🛠┇عذرا الايدي معطل ...!\n'..'['..UserNameID..']'
+'🛠╣عذرا الايدي معطل ...!\n'..'['..UserNameID..']'
 ..'🎟╣ايديـك ➣ '..msg.sender_user_id_..'\n'
 ..'🤹‍♂️╣رتبتـك ➣ '..msg.TheRank..'\n'
 ..'🎭╣تفاعلك ➣ '..Get_Ttl(msgs)..\n'
