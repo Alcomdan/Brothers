@@ -1,5 +1,5 @@
 --[[
-▇▇▇▇ @hlh313 ▇▇▇            ▇▇▇▇▇▇▇
+▇▇▇▇ @sajad14p ▇▇▇            ▇▇▇▇▇▇▇
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇                    ▇
@@ -7,7 +7,7 @@
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇ ¦ @cgngv  ▇
 ▇           ▇           ▇            ▇                    ▇ ¦Dev :@sajad14p
-▇▇▇▇ @hlh313 ▇▇▇                        ▇ ¦Source max BY @@P_P_Z
+▇▇▇▇ @sajad14p ▇▇▇                        ▇ ¦Source max BY @@P_P_Z
 ---------------------------------------------------------------------
 ]]
 Er_cjson , JSON  = pcall(require, "cjson")
@@ -125,7 +125,7 @@ function Start_Bot()
 local TokenBot = io.open('./inc/Token.txt', "r")
 if not TokenBot then
 print('\27[0;33m>>'..[[
-▇▇▇▇ @hlh313 ▇▇▇            ▇▇▇▇▇▇▇
+▇▇▇▇ @sajad14p ▇▇▇            ▇▇▇▇▇▇▇
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇                    ▇
@@ -133,7 +133,7 @@ print('\27[0;33m>>'..[[
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇ ¦ @cgngv  ▇
 ▇           ▇           ▇            ▇                    ▇ ¦Dev :@sajad14p
-▇▇▇▇ @hlh313 ▇▇▇                        ▇ ¦Source max BY @@P_P_Z
+▇▇▇▇ @sajad14p ▇▇▇                        ▇ ¦Source max BY @@P_P_Z
 ]]..'\027[0;32m')
 create_config() 
 else
@@ -162,7 +162,7 @@ print(tostring(io.popen("lua inc/locks.lua"):read('*all')))
 end
 
 print('\27[0;33m>>'..[[
-▇▇▇▇ @hlh313 ▇▇▇            ▇▇▇▇▇▇▇
+▇▇▇▇ @sajad14p ▇▇▇            ▇▇▇▇▇▇▇
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇                    ▇
@@ -170,7 +170,7 @@ print('\27[0;33m>>'..[[
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇ ¦ @cgngv  ▇
 ▇           ▇           ▇            ▇                    ▇ ¦Dev :@sajad14p
-▇▇▇▇ @hlh313 ▇▇▇                        ▇ ¦Source max BY @@P_P_Z
+▇▇▇▇ @sajad14p ▇▇▇                        ▇ ¦Source max BY @@P_P_Z
                                                   
 ]]..'\027[0;32m'
 ..'¦ TOKEN_BOT: \27[1;34m'..Token..'\027[0;32m\n'
