@@ -328,7 +328,7 @@ return false
 end
 
 
-if MsgText[1] == "رفع مميز" then
+if MsgText[1] == "اضف مميز" then
 if not msg.Admin then return "♦️*┇*هذا الامر يخص {الادمن,المدير,المنشئ,المطور} فقط  \n💥" end
 if not MsgText[2] and msg.reply_id then
 GetMsgInfo(msg.chat_id_,msg.reply_id,action_by_reply,{msg=msg,cmd="setwhitelist"})
@@ -358,7 +358,7 @@ return false
 end
 
 
-if (MsgText[1] == "رفع المدير"  or MsgText[1] == "رفع مدير" ) then
+if (MsgText[1] == "اضف المدير"  or MsgText[1] == "رفع مدير" ) then
 if not msg.Creator then return "♦️*┇*هذا الامر يخص {المطور,المنشئ} فقط  \n💥" end
 if not MsgText[2] and msg.reply_id then
 GetMsgInfo(msg.chat_id_,msg.reply_id,action_by_reply,{msg=msg,cmd="setowner"})
@@ -388,7 +388,7 @@ return false
 end
 
 
-if (MsgText[1] == "رفع منشى" or MsgText[1] == "رفع منشئ") then
+if (MsgText[1] == "اضف منشى" or MsgText[1] == "رفع منشئ") then
 if not msg.SudoUser then return "♦️*┇*هذا الامر يخص {المطور,المطور الاساسي} فقط  \n💥" end
 if not MsgText[2] and msg.reply_id then
 GetMsgInfo(msg.chat_id_,msg.reply_id,action_by_reply,{msg=msg,cmd="setmnsha"})
@@ -418,7 +418,7 @@ return false
 end
 
 
-if MsgText[1] == "رفع ادمن" then
+if MsgText[1] == "اضف ادمن" then
 if not msg.Director then return "♦️*┇*هذا الامر يخص {المطور,المنشئ,المدير} فقط  \n💥" end
 
 if not MsgText[2] and msg.reply_id then
@@ -1265,7 +1265,7 @@ if not msg.Admin then return "♦️*┇*هذا الامر يخص {الادمن,
 return GetListBanned(msg) 
 end
 
-if MsgText[1] == "رفع الادمنيه" then
+if MsgText[1] == "اضف الادمنيه" then
 if not msg.Creator then return "♦️*┇*هذا الامر يخص {المطور,المنشئ} فقط  \n💥" end
 return set_admins(msg) 
 end
@@ -1293,7 +1293,7 @@ end
 
 if msg.SudoBase then
 
-if MsgText[1] == "رفع مطور" then
+if MsgText[1] == "اضف مطور" then
 if not MsgText[2] and msg.reply_id then 
 GetMsgInfo(msg.chat_id_,msg.reply_id,action_by_reply,{msg=msg,cmd="up_sudo"}) 
 return false
@@ -1580,7 +1580,7 @@ sendMsg(msg.chat_id_,msg.id_,'🔛*┊* يوجد تحديث جديد الان \n
 redis:set(max..":VERSION",GetVerison)
 return false
 else
-return "🔖┊سـورس مـاكـس\n👨🏾‍🔧*┊* لديـك احدث اصدار \n📦"
+return "🔖╣سـورس الاخوين \n👨🏾‍🔧*┊* لديـك احدث اصدار \n📦"
 end
 return false
 end
@@ -1639,7 +1639,7 @@ if (MsgText[1]== "ايدي" or MsgText[1]=="ايديي🆔") and msg.type == "pv
 
 if MsgText[1]== "قناة السورس 📡" and msg.type == "pv" then
 local inline = {{{text="⚜┇قنآهہ‏‏ آلسـورس ضـغـط هـنـآ ",url="t.me/cgngv"}}}
-send_key(msg.sender_user_id_,'  [⚜┇قناة سورس : مـاكـس](t.me/cgngv)',nil,inline,msg.id_)
+send_key(msg.sender_user_id_,'  [⚜┇قناة سورس : الاخوين](t.me/cgngv)',nil,inline,msg.id_)
 return false
 end
 
@@ -1833,9 +1833,9 @@ local text =[[
 1⇜ ❴ آوآمر الرفع والتنزيل ❵
 
  
-⚗┇رفع المدير ‿ تنزيل المدير
-📿┇رفع ادمن ‿ تنزيل ادمن 
-💈┇رفع مميز ‿ تنزيل مميز 
+⚗┇اضف المدير ‿ تنزيل المدير
+📿┇اضف ادمن ‿ تنزيل ادمن 
+💈┇اضف مميز ‿ تنزيل مميز 
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 2⇜  ❴ آو꯭آم꯭ـر آ꯭لم꯭ـس꯭ـح꯭ للم꯭ـنش꯭ـى ❵ 
 
@@ -2058,15 +2058,10 @@ end
 if MsgText[1] == "سورس" or MsgText[1]=="السورس" then
 return [[
 📡┇ اهلا بك في سورس الاخوين •
-
 📯┇ BroTherS TeAm `
-
 🔎┇ [قناه السورس](t.me/cgngv) •
-
 🔎┇ [ مطور السورس](t.me/sajad14p) •
-
 🔋┇ [كليشه التنصيب](https://t.me/cgngv/273) •
-
 📮┇ [لــ تواصل](t.me/rrrrybot) •
 ]]
 end
