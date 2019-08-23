@@ -969,7 +969,7 @@ end
 end
 if redis:get("getidstatus"..msg.chat_id_) == "Simple" then
 sendMsg(msg.chat_id_,msg.id_,
-'📬╣غذرا تم بتعطيل الايدي بالصوره ...!\n'..'['..UserNameID..']'
+'📬╣عذرا تم بتعطيل الايدي بالصوره ...!\n'..'['..UserNameID..']'
 ..'🎟╣ايديـك ➣ '..msg.sender_user_id_..' \n'
 ..'📡╣رتبتـك ➣ '..msg.TheRank..' \n'
 ..'🎲╣تفاعلك ➣ '..Get_Ttl(msgs)..' \n'
@@ -1638,8 +1638,8 @@ end
 if (MsgText[1]== "ايدي" or MsgText[1]=="ايديي🆔") and msg.type == "pv" then return  "\n👨🏻‍💻┊اهلن عزيزي المطور ايديك هوه ⏬\n\n🧟‍♂┊"..msg.sender_user_id_.."\n"  end
 
 if MsgText[1]== "قناة السورس 📡" and msg.type == "pv" then
-local inline = {{{text="⚜┇قنآهہ‏‏ آلسـورس ضـغـط هـنـآ ",url="t.me/hlh_313"}}}
-send_key(msg.sender_user_id_,'  [⚜┇قناة سورس : مـاكـس](t.me/hlh_313)',nil,inline,msg.id_)
+local inline = {{{text="⚜┇قنآهہ‏‏ آلسـورس ضـغـط هـنـآ ",url="t.me/cgngv"}}}
+send_key(msg.sender_user_id_,'  [⚜┇قناة سورس : مـاكـس](t.me/cgngv)',nil,inline,msg.id_)
 return false
 end
 
@@ -2057,7 +2057,6 @@ end
 
 if MsgText[1] == "سورس" or MsgText[1]=="السورس" then
 return [[
-  
 📡┇ اهلا بك في سورس الاخوين •
 
 📯┇ BroTherS TeAm `
@@ -2069,7 +2068,6 @@ return [[
 🔋┇ [كليشه التنصيب](https://t.me/cgngv/273) •
 
 📮┇ [لــ تواصل](t.me/rrrrybot) •
-  
 ]]
 end
 
