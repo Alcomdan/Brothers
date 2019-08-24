@@ -969,6 +969,7 @@ end
 end
 if redis:get("getidstatus"..msg.chat_id_) == "Simple" then
 sendMsg(msg.chat_id_,msg.id_,
+ '🖲╣عذرا تم بتعطيل الايدي بالصوره ...!\n'..'['..UserNameID..']          
 ..'📧╣ايديـك ➣ '..msg.sender_user_id_..' \n'
 ..'🔍╣رتبتـك ➣ '..msg.TheRank..' \n'
 ..'📊╣تفاعلك ➣ '..Get_Ttl(msgs)..' \n'
