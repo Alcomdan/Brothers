@@ -16,7 +16,7 @@ if not msg.Admin then
 return "📛*¦* هذا الامر يخص {الادمن,المدير,المنشئ,المطور} فقط  \n🚶"
 end
 redis:set("getidstatus"..msg.chat_id_, "Simple")
-return "تم تعطيل الايدي بالصوره"
+return "☑┇الايدي بالصوره  تم تعطيله"
 end 
 
 function unlock_photos(msg)
@@ -24,7 +24,7 @@ if not msg.Admin then
 return "📛*¦* هذا الامر يخص {الادمن,المدير,المنشئ,المطور} فقط  \n🚶"
 end
 redis:set("getidstatus"..msg.chat_id_, "Photo")
-return "تم تفعيل الايدي بالصوره"
+return "☑┇الايدي بالصوره  تم تفعيله"
 end
 
 
@@ -969,7 +969,6 @@ end
 end
 if redis:get("getidstatus"..msg.chat_id_) == "Simple" then
 sendMsg(msg.chat_id_,msg.id_,
-'🖲╣عذرا تم بتعطيل الايدي بالصوره ...!\n'..'['..UserNameID..']'
 ..'📧╣ايديـك ➣ '..msg.sender_user_id_..' \n'
 ..'🔍╣رتبتـك ➣ '..msg.TheRank..' \n'
 ..'📊╣تفاعلك ➣ '..Get_Ttl(msgs)..' \n'
