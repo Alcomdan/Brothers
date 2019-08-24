@@ -373,7 +373,7 @@ return false
 end
 
 
-if (MsgText[1] == "تنزيل المدير" or MsgText[1] == "تنزيل مدير" ) then
+if (MsgText[1] == "تنزيل مدير" or MsgText[1] == "تنزيل مدير" ) then
 if not msg.Creator then return "♦️*┇*هذا الامر يخص {المطور,المنشئ} فقط  \n💥" end
 if not MsgText[2] and msg.reply_id then
 GetMsgInfo(msg.chat_id_,msg.reply_id,action_by_reply,{msg=msg,cmd="remowner"})
